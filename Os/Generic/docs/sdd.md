@@ -8,7 +8,7 @@ Available implementations:
 
 ## Os::PriorityQueue
 
-Os::PriorityQueue is an in-memory implementation of Os::Queue. It allows projects that desire in-memory queue support to use Os::Queues.  Os::PriorityQueue allocates memory for its underlying data structures using `new (nothrow)` and deallocates memory with `delete`. These actions are taken during `create` and object destruction. This implies that Os::PriorityQueue should be instantiated and initialized during system intitialization.
+Os::PriorityQueue is an in-memory implementation of Os::Queue. It allows projects that desire in-memory queue support to use Os::Queues.  Os::PriorityQueue allocates memory for its underlying data structures using `new (nothrow)` and deallocates memory with `delete`. These actions are taken during `create` and object destruction. This implies that Os::PriorityQueue should be instantiated and initialized during system initialization.
 
 For memory protection, Os::PriorityQueue delegates to Os::Mutex and Os::ConditionVariable.
 
