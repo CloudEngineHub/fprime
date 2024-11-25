@@ -20,7 +20,7 @@ In order to prioritize messages, a [Types::MaxHeap](#typesmaxheap-data-structure
 
 When a message is received from a calling sender, `find_index` returns a free index from the free list. The data is copied into the message data array, and the size into the size array using this free index via `store_data`. The index is then inserted into the max heap structure for prioritization. When the queue is full and the `BLOCKING` option was supplied, the sender will block on the `m_full` condition variable until notified of a dequeue.
 
-When a message is dequeued, the highest priority index is removed from the max heap. The data is copied out from the data array, and the size from the size array using that index via `load_data` and sent to the calling receiver. The index is then returned to the free list via `return_index` to indicate that it may be reused. When the queue is empty and the `BLOCKING` option was supplied, the receiver will block on the `m_empty` condition variable until notified of a dequeue.
+When a message is dequeued, the highest priority index is removed from the max heap. The data is copied out from the data array, and the size from the size array using that index via `load_data` and sent to the calling receiver. The index is then returned to the free list via `return_index` to indicate that it may be reused. When the queue is empty and the `BLOCKING` option was supplied, the receiver will block on the `m_empty` condition variable until notified of a enqueue.
 
 If the queue is empty and data was received, the `m_empty` condition variable is notified to unblock waiting receivers. If the queue is full and data was dequeued, the `m_full` condition variable is notified to unblock waiting receivers.
 
