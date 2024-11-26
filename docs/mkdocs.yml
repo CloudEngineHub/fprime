@@ -192,7 +192,7 @@ extra_css:
 plugins:
   - search # enables search
   - mike:
-      alias_type: copy
+      alias_type: symlink
       canonical_version: latest
   - open-in-new-tab
   - multirepo:
