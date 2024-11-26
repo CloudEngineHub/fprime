@@ -335,7 +335,7 @@ nav:
       - 'Porting F´ To a New Platform': documentation/how-to/porting-guide.md
     - Reference:
       - documentation/reference/index.md
-      - 'C++ Documentation': 'documentation/reference/api/c++/html/index.html'
+      - 'C++ Documentation': 'documentation/reference/api/cpp/html/index.html'
       - 'FPP Language Specification': https://nasa.github.io/fpp/fpp-spec.html
       - 'CMake User API': 'documentation/user-manual/cmake/cmake-api.md'
       - 'GDS Developers Guide': documentation/reference/gds-cli-dev.md

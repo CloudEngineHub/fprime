@@ -16,7 +16,7 @@ Technical reference for the F Prime C++ API, CMake API, FPP language specificati
 
     This is the F´ automatically generated documentation for C++.
 
-    [View C++ Documentation](./api/c++/html/index.html){ .md-button .md-button--primary }
+    [View C++ Documentation](./api/cpp/html/index.html){ .md-button .md-button--primary }
 
 -   <span class="card-title">__FPP Documentation__</span>
 

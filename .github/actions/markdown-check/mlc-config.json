@@ -14,7 +14,7 @@
       },
       {
         "pattern": "^[./]*api/c\\+\\+/",
-        "replacement": "https://nasa.github.io/fprime/UsersGuide/api/c++/"
+        "replacement": "https://nasa.github.io/fprime/UsersGuide/api/cpp/"
       }
     ]
 }
