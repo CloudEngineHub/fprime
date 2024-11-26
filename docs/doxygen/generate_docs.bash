@@ -26,13 +26,6 @@ then
     exit 1
 fi
 
-function github_page_adjustment
-{
-    DIRECTORY="${1}"
-    shift
-    echo "[INFO] Munching '_'s in ${DIRECTORY}"
-    python "${SOURCE_DIR}/gh_pages.py" "${DIRECTORY}"
-}
 function clobber
 {
     DIRECTORY="${1}"
@@ -81,9 +74,6 @@ function clobber
     "${FPRIME}/cmake/docs/docs.py" "${FPRIME}/cmake/" "${CMAKE_OUTPUT}"
 ) || exit 1
 
-
-# Fix for github pages
-github_page_adjustment "${DOXY_OUTPUT}/html"
 
 # Copy images so they're properly referenced
 IMG_DIR="${DOXY_OUTPUT}/html/img"
