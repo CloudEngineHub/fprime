@@ -192,7 +192,9 @@ extra_css:
 plugins:
   - search # enables search
   - mike:
-      alias_type: symlink
+      # symlink are not allowed in our usage of GH Pages so we have to use copy
+      # see https://github.blog/changelog/2023-02-21-github-pages-deprecating-symlinks-in-non-actions-builds/
+      alias_type: copy
       canonical_version: latest
   - open-in-new-tab
   - multirepo:
