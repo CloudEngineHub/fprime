@@ -375,10 +375,10 @@ cd /path/to/plugin/directory
 pip install -e .
 ```
 
-!!! warning
-    Users must be in the same virtual environment that the `fprime-gds` package has been installed into
-
-    `-e` allows local changes to take effect without a reinstall
+> [!WARNING]
+> Users must be in the same virtual environment that the `fprime-gds` package has been installed into
+>
+> `-e` allows local changes to take effect without a reinstall
 
 The first step in testing a plugin is to run `fprime-gds --help`. This should show arguments associated with your plugin.
 The plugins implemented here would produce the following output:
@@ -394,16 +394,16 @@ Gds_App Plugin 'my-app' Options:
   --disable-my-app      Disable the gds_app plugin 'my-app' (default: False)
   --message MESSAGE     Message to print (default: None)
 ```
-!!! warning
-    Syntax errors, indentation errors, and other exceptions can arise during this step. Resolving these errors will allow the help message to display properly.
+> [!WARNING]
+> Syntax errors, indentation errors, and other exceptions can arise during this step. Resolving these errors will allow the help message to display properly.
 
 To test selection plugins, select them during a normal GDS run:
 
 ```
 fprime-gds --framing-selection my-plugin
 ```
-!!! warning
-    Remember to supply any arguments needed for your plugin!
+> [!WARNING]
+> Remember to supply any arguments needed for your plugin!
 
 Application plugins run automatically at start-up. To test these plugins, just supply any desired arguments:
 
