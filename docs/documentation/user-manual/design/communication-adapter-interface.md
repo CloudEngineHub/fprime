@@ -25,7 +25,7 @@ stream driver model for backwards compatibility.
 
 
 > [!NOTE]
-> components implementing the *Communication Adapter Interface* must deallocate any `Fw::Buffer` received on the `comDataIn` port or must delegate the deallocation to another component (e.g. a driver). See [Memory Management in F´ (under construction)](memory.md)
+> components implementing the *Communication Adapter Interface* must deallocate any `Fw::Buffer` received on the `comDataIn` port or must delegate the deallocation to another component (e.g. a driver).
 
 ### comDataIn Description
 

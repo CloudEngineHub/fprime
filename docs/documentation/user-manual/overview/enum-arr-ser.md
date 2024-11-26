@@ -103,8 +103,7 @@ Arrays are fixed-length containers of other types. They must be type-homogeneous
 ### Serializables
 
 Serializables are field-value compositions of other types. They can be type-heterogeneous and may contain any other type
-as a value. The autocoder will generate a class with accessor methods for the fields. See the full specification for
-the serializable XML: [F´ XML Specifications: Serializables](../framework/xml-specification.md#serializable)
+as a value. The autocoder will generate a class with accessor methods for the fields.
 
 ### C++ Classes
 

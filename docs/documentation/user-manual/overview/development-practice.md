@@ -148,7 +148,7 @@ will be done automatically:
 
 The `fprime-util new --component` uses the built-in cookiecutter template by default, 
 but users can substitute their own component template by using the component_cookiecutter 
-field of the settings.ini file. To learn more, see [Creating and Using a Cookiecutter Template](cookiecutter.md).
+field of the settings.ini file. To learn more, see the [Cookiecutter Documentation](https://cookiecutter.readthedocs.io/en/latest/index.html).
 
 ### Component Implementation
 
