@@ -26,7 +26,6 @@ define types and headers needed for F´ for any embedded system they desire.
 [Platform Template](../../reference/api/cmake/platform/platform-template.md): Platform file template documentation  
 [Linux](../../reference/api/cmake/platform/Linux.md): Linux platform support  
 [Darwin](../../reference/api/cmake/platform/Darwin.md): Darwin (macOS) platform support  
-[rtems5](../../reference/api/cmake/platform/rtems5.md): RTEMS 5 initial support  
 
 ## Target Documentation
 
