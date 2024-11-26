@@ -1,8 +1,10 @@
 name: Autodocs
-on:
-  push:
-    branches:
-      - "devel"
+
+# Workflow intentionally deactivated as of November 2024 since we migrated to MkDocs
+on: workflow_dispatch
+#   push:
+#     branches:
+#       - "devel"
 
 jobs:
   build:
