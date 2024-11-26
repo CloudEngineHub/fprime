@@ -1,12 +1,8 @@
 # F´ CMake Build System
 
-Historical versions of F´ shipped with a bespoke make system ensure that building is done correctly and in the correct
-order. However, using and maintaining this build system presents a steep learning curve to new
-users of F´. The new CMake system is intended as a replacement for the old make-based
-build system that should be easier to learn and use. In addition, the use of cmake puts F´more in line with standard C++ development.
+F´ leverages CMake as its underlying build system, adding an [API layer](../../reference/api/cmake/API.md) for ease of use.
 
-Since this CMake system is designed to follow CMake norms, certain caveats must be
-understood before beginning to use CMake. These are described below:
+Since this F´ CMake system is designed to follow CMake norms, certain caveats must be understood before beginning to use CMake. These are described below:
 
 1. CMake should not be used in tandem with the original make system.  If it is needed to switch
 between make systems, perform a `git clean -xdf` command or otherwise remove **all** generated files.
